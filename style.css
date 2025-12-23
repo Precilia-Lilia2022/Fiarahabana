@@ -59,21 +59,12 @@ html, body {
 
 /* FRONT COVER */
 .card-front {
-  background: linear-gradient(
-    to right,
-    #ffffff 0%,
-    #ffffff 33.33%,
-    #fc3d32 33.33%,
-    #fc3d32 66.66%,
-    #007e3a 66.66%,
-    #007e3a 100%
-  );
-  color: #222;
+  background: linear-gradient(135deg, #ff8c9f, #ff5da1);
+  color: white;
   transform-origin: left center;
   transition: transform 1s ease;
   z-index: 2;
 }
-
 
 /* INSIDE PAGE */
 .card-inside {

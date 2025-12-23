@@ -68,7 +68,7 @@ html, body {
 
 /* INSIDE PAGE */
 .card-inside {
-  background: rgb(252, 231, 231);
+  background: rgb(254, 254, 254);
   color: #333;
   border-radius: 12px;
   z-index: 1;
@@ -103,7 +103,7 @@ html, body {
 }
 
 #animated-text {
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 1.4;
   opacity: 0;
   transition: opacity 0.3s ease;

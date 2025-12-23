@@ -1,0 +1,130 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.background {
+  min-height: 100dvh; /* fixes mobile browser issues */
+  width: 100%;
+  background-image: url("./image/baobab.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card container */
+.card-container {
+  perspective: 1200px;
+}
+
+.card {
+  width: 320px;
+  height: 220px;
+  position: relative;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .card {
+    width: 420px;
+    height: 280px;
+  }
+}
+
+.card-side {
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* FRONT COVER */
+.card-front {
+  background: linear-gradient(
+    to right,
+    #ffffff 0%,
+    #ffffff 33.33%,
+    #fc3d32 33.33%,
+    #fc3d32 66.66%,
+    #007e3a 66.66%,
+    #007e3a 100%
+  );
+  color: #222;
+  transform-origin: left center;
+  transition: transform 1s ease;
+  z-index: 2;
+}
+
+
+/* INSIDE PAGE */
+.card-inside {
+  background: rgb(252, 231, 231);
+  color: #333;
+  border-radius: 12px;
+  z-index: 1;
+}
+
+/* OPEN STATE */
+.card.open .card-front {
+  transform: rotateY(-150deg);
+}
+
+
+/* Text styles */
+.card-front h2 {
+  font-size: 1.5rem;
+}
+
+.card-front p {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.card-inside h2 {
+  color: #ed304f;
+  margin-bottom: 10px;
+}
+
+.signature {
+  margin-top: 16px;
+  font-style: italic;
+  font-size: 0.85rem;
+  line-height: 1.3;
+}
+
+#animated-text {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card.open #animated-text {
+  opacity: 1;
+}
+
+.card-front h2,
+.card-front p {
+  text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+

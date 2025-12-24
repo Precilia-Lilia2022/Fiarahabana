@@ -1,7 +1,7 @@
 const card = document.getElementById("card");
 const textEl = document.getElementById("animated-text");
 
-const message = "Ny mpiandraikidraharaha eto amim'ny Masoivoho Malagasy - New Delhi dia miarahaba anao tratry ny taona 2026. Ho ambinina aminjava-manasatra Tompoko.";
+const message = "Ny mpiandraikidraharaha eto amin'ny Masoivoho Malagasy - New Delhi dia miarahaba anao tratry ny taona 2026. Ho ambinina aminjava-manasatra Tompoko.";
 
 let index = 0;
 let typingInterval;

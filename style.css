@@ -114,8 +114,8 @@ html, body {
 }
 
 .card-inside h2 {
-  color: #ed304f;
-  margin-bottom: 10px;
+  /* color: #ed304f; */
+  margin-bottom: 8px;
 }
 
 .signature {
